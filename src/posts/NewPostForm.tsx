@@ -15,6 +15,7 @@ export function NewPostForm({ onSave }: Props) {
   function getEditorStyle(fieldError: FieldError | undefined) {
     return fieldError ? 'border-red-500' : '';
   }
+
   return (
     <form noValidate className="border-b py-4" onSubmit={handleSubmit(onSave)}>
       <div className={fieldStyle}>
